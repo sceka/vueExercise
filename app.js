@@ -2,26 +2,26 @@ const app = Vue.createApp({
 	data() {
 		return {
 			showBook: 'true',
-			title: 'Rich Dad Poor Dad',
-			author: 'Robert Kiyosaki',
-			age: '74',
-			x: 0,
-			y: 0
+
+			books: [
+				{
+					title: 'Rich Dad poor Dad',
+					author: 'Robert Kiyosaki'
+				},
+				{
+					title: 'Think and Grow Rick',
+					author: 'Napoleon Hill'
+				},
+				{
+					title: 'Richest Man in Babylon',
+					author: 'George S. Clason'
+				}
+			]
 		};
 	},
 	methods: {
 		toogleShowBook() {
 			this.showBook = !this.showBook;
-		},
-		handleEvent(e, data) {
-			console.log(e, e.type);
-			if (data) {
-				console.log(data);
-			}
-		},
-		handleMouseMove(e) {
-			this.x = e.offsetX;
-			this.y = e.offsetY;
 		}
 	}
 });
