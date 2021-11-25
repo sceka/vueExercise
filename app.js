@@ -6,15 +6,18 @@ const app = Vue.createApp({
 			books: [
 				{
 					title: 'Rich Dad poor Dad',
-					author: 'Robert Kiyosaki'
+					author: 'Robert Kiyosaki',
+					img: '/assets/1.jpeg'
 				},
 				{
 					title: 'Think and Grow Rick',
-					author: 'Napoleon Hill'
+					author: 'Napoleon Hill',
+					img: '/assets/2.jpeg'
 				},
 				{
 					title: 'Richest Man in Babylon',
-					author: 'George S. Clason'
+					author: 'George S. Clason',
+					img: '/assets/3.jpeg'
 				}
 			]
 		};
